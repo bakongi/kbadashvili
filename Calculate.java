@@ -1,36 +1,38 @@
+package kbadashvili; //Р”РѕР±Р°РІРёР» РїР°РєРµС‚
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.lang.Math;
 
 public class Calculate {
-	public static void main(String[] arg) throws Exception{
-		// Выводим надпись Calculating...
+	public static void main(String[] args) throws Exception{
+		// Г‚Г»ГўГ®Г¤ГЁГ¬ Г­Г Г¤ГЇГЁГ±Гј Calculating...
 		System.out.println("Calculating...");
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		
-		/* Суммирование */
-		// Просим ввести первый параметр с соответствующим сообщением
+		/* Г‘ГіГ¬Г¬ГЁГ°Г®ГўГ Г­ГЁГҐ */
+		// ГЏГ°Г®Г±ГЁГ¬ ГўГўГҐГ±ГІГЁ ГЇГҐГ°ГўГ»Г© ГЇГ Г°Г Г¬ГҐГІГ° Г± Г±Г®Г®ГІГўГҐГІГ±ГІГўГіГѕГ№ГЁГ¬ Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐГ¬
 		System.out.println("Enter first int:");			
 		final int first = Integer.parseInt(reader.readLine());
 		
-		// Просим ввести второй параметр с соответствующим сообщением
+		// ГЏГ°Г®Г±ГЁГ¬ ГўГўГҐГ±ГІГЁ ГўГІГ®Г°Г®Г© ГЇГ Г°Г Г¬ГҐГІГ° Г± Г±Г®Г®ГІГўГҐГІГ±ГІГўГіГѕГ№ГЁГ¬ Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐГ¬
 		System.out.println("Enter second int:");
 		final int second = Integer.parseInt(reader.readLine());
-		// Суммируем
+		// Г‘ГіГ¬Г¬ГЁГ°ГіГҐГ¬
 		final int sum = first + second;
 		
-		/* Возведение в степень */
-		// Просим ввести первый параметр с соответствующим сообщением
+		/* Г‚Г®Г§ГўГҐГ¤ГҐГ­ГЁГҐ Гў Г±ГІГҐГЇГҐГ­Гј */
+		// ГЏГ°Г®Г±ГЁГ¬ ГўГўГҐГ±ГІГЁ ГЇГҐГ°ГўГ»Г© ГЇГ Г°Г Г¬ГҐГІГ° Г± Г±Г®Г®ГІГўГҐГІГ±ГІГўГіГѕГ№ГЁГ¬ Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐГ¬
 		System.out.println("Enter first double:");			
 		final double dfirst = Double.parseDouble(reader.readLine());
 		
-		// Просим ввести второй параметр с соответствующим сообщением
+		// ГЏГ°Г®Г±ГЁГ¬ ГўГўГҐГ±ГІГЁ ГўГІГ®Г°Г®Г© ГЇГ Г°Г Г¬ГҐГІГ° Г± Г±Г®Г®ГІГўГҐГІГ±ГІГўГіГѕГ№ГЁГ¬ Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐГ¬
 		System.out.println("Enter seconf double:");			
 		final double dsecond = Double.parseDouble(reader.readLine());
-		// Возводим в степень
+		// Г‚Г®Г§ГўГ®Г¤ГЁГ¬ Гў Г±ГІГҐГЇГҐГ­Гј
 		final double pow = Math.pow(dfirst, dsecond);
 		
-		// Выводи результат в консоль
+		// Г‚Г»ГўГ®Г¤ГЁ Г°ГҐГ§ГіГ«ГјГІГ ГІ Гў ГЄГ®Г­Г±Г®Г«Гј
 		System.out.println("Sum: " + sum);
 		System.out.println("Pow: " + pow);
 	}
