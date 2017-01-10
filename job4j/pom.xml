@@ -1,0 +1,11 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>ru.kbadashvili</groupId>
+	<artifactId>job4j</artifactId>
+	<packaging>pom</packaging>
+	<version>1.0</version>
+
+	<modules>
+		<module>chapter_001</module>
+	</modules>
+</project>	
