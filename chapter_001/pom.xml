@@ -1,0 +1,14 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>ru.kbadashvili</groupId>
+	<artifactId>chapter_001</artifactId>
+	<packaging>jar</packaging>
+	<version>1.0</version>
+
+	<parent>
+        <groupId>ru.kbadashvili</groupId>
+        <artifactId>junior</artifactId>
+        <version>1.0</version>
+    </parent>
+
+</project>	
