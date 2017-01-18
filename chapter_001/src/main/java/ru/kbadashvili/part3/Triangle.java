@@ -48,13 +48,15 @@ public class Triangle {
     */
     public double area() {
 //calculate the triangle area
+    	double result = 0.0;
     	this.sideA = (this.a.distanceTo(this.b));
     	this.sideB = (this.b.distanceTo(this.c));
     	this.sideC = (this.c.distanceTo(this.a));
     	if (this.sideA + this.sideB > this.sideC || this.sideB + this.sideC > this.sideA || this.sideA + this.sideC > this.sideB) {
     		double p = (this.sideA + this.sideB + this.sideC) / 2;
+    		result = Math.sqrt(p * ((p - this.sideA) * (p - this.sideB) * (p - this.sideC)));
     	}
 
-        return Math.sqrt(p * ((p - this.sideA) * (p - this.sideB) * (p - this.sideC)));;
+        return result;
     }
 }

@@ -14,7 +14,9 @@ package ru.kbadashvlili.part3;
  	* @return result - возвращает максимально из двух чисел.
  	*/
  	public int max(int first, int second) {
- 		return first >= second ? first : second;;
+ 		int result;
+ 		result = first >= second ? first : second;
+ 		return result;
  	}
 
  	/**

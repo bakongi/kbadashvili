@@ -62,5 +62,5 @@ import static org.junit.Assert.assertThat;
  			result = max.max(third, second, i);
  			assertThat(result, is(third));
  		}
- 	} 
+ 	}
  }
