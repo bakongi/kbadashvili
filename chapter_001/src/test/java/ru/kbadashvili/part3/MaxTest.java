@@ -5,7 +5,7 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
  /**
- * Ппрограмма вычисления площади треугольника.
+ * Тест.
  * @author Konstantin Badashvili (bakongi@protonmail.com)
  * @version $Id$
  * @since 2017

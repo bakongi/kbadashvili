@@ -20,6 +20,7 @@ public class CalculateTest {
     @Test
     public void whenAddOneToOneThenTwo() {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
+        Calculate calc = new Calculate();
         System.setOut(new PrintStream(out));
         Calculate.main(null);
         assertThat(

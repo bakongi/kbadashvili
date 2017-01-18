@@ -1,7 +1,7 @@
 package ru.kbadashvlili.part3;
 
  /**
- * Тест.
+ * Максимум из двух чисел.
  * @author Konstantin Badashvili (bakongi@protonmail.com)
  * @version $Id$
  * @since 2017
@@ -14,8 +14,6 @@ package ru.kbadashvlili.part3;
  	* @return result - возвращает максимально из двух чисел.
  	*/
  	public int max(int first, int second) {
- 		int result;
- 		result = first >= second ? first : second;
- 		return result;
+ 		return first >= second ? first : second;;
  	}
  }
