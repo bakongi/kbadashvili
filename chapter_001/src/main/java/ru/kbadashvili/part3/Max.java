@@ -26,6 +26,6 @@ package ru.kbadashvlili.part3;
  	* @return result - возвращает максимально из двух чисел.
  	*/
  	public int max(int first, int second, int third) {
- 		return this.max(this.max(first, second), this.max(second, third));
+ 		return this.max(this.max(first, second), third);
  	}
  }
