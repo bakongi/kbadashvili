@@ -16,4 +16,14 @@ package ru.kbadashvlili.part3;
  	public int max(int first, int second) {
  		return first >= second ? first : second;;
  	}
+
+ 	/**
+ 	* @param first - first.
+ 	* @param second - second.
+ 	* @param third - third.
+ 	* @return result - возвращает максимально из двух чисел.
+ 	*/
+ 	public int max(int first, int second, int third) {
+ 		return this.max(this.max(first, second), this.max(second, third));
+ 	}
  }
