@@ -9,11 +9,11 @@ import java.math.BigInteger;
  * @since 2017
  */
  public class Factorial {
- 	 	/**
+ 	 /**
  	* @param n - чилсо для вычисления факториала.
  	* @return bigresult - факториал.
  	*/
- 	public static BigInteger find(int n) {
+ 	public BigInteger find(int n) {
         //add your code here
         BigInteger bigresult = BigInteger.valueOf((long) 1);
         for (long i = 1; i <= n; i++) {
