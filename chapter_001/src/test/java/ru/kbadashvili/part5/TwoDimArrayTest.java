@@ -16,25 +16,16 @@ import static org.junit.Assert.assertThat;
  	*/
  	@Test
  	public void ninetyDegreeTurnTest() {
- 		final int one = 1;
- 		final int two = 2;
- 		final int three = 3;
- 		final int four = 4;
- 		final int five = 5;
- 		final int six = 6;
- 		final int seven = 7;
- 		final int eight = 8;
- 		final int nine = 9;
 
  		final int[][] array = new int[][]{
-                {one, two, three},
-                {four, five, six},
-                {seven, eight, nine},
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9},
         };
         int[][] arrayresult = new int[][]{
-                {seven, four, one},
-                {eight, five, two},
-                {nine, six, three},
+                {7, 4, 1},
+                {8, 5, 2},
+                {9, 6, 3},
         };
         TwoDimArray turner = new TwoDimArray();
         assertThat(turner.turn(array), is(arrayresult));
