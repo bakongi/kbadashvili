@@ -1,4 +1,4 @@
-package ru.kbadashvlili.part2;
+package ru.kbadashvili.part2;
  /**
  * 2. Тип данных.
  * 2.3. Создать программу калькулятор.

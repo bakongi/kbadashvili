@@ -1,4 +1,4 @@
-package ru.kbadashvlili.part5;
+package ru.kbadashvili.part5;
 
  /**
  * 5.1. Создать программу для сортировки массива методов перестановки.

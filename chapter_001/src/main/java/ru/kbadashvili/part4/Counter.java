@@ -1,4 +1,4 @@
-package ru.kbadashvlili.part4;
+package ru.kbadashvili.part4;
 
  /**
  * Подсчет суммы в диапозоне.

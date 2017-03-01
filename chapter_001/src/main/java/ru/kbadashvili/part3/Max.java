@@ -1,4 +1,4 @@
-package ru.kbadashvlili.part3;
+package ru.kbadashvili.part3;
 
  /**
  * Максимум из двух чисел.

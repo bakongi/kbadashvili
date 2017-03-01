@@ -1,4 +1,4 @@
-package ru.kbadashvlili.part3;
+package ru.kbadashvili.part3;
 
 import org.junit.Test;
 import static org.junit.Assert.assertThat;
