@@ -1,4 +1,4 @@
-package ru.kbadashvili.part4;
+package ru.kbadashvili;
 
  /**
  * Построить пирамиду в псевдографике.
