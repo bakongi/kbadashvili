@@ -1,4 +1,4 @@
-package ru.kbadashvili.part4;
+package ru.kbadashvili.part3;
 
 /**
  * Created by KBadashvili on 001 01.03.17.

@@ -1,4 +1,4 @@
-package ru.kbadashvili.part4;
+package ru.kbadashvili.part3;
 
 import org.junit.Test;
 import static org.hamcrest.core.Is.is;
