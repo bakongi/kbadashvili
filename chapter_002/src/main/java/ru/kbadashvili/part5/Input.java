@@ -13,5 +13,5 @@ public interface Input {
      * @return String.
      * @throws IOException Exception.
      */
-    public String ask(String question) throws IOException;
+    String ask(String question) throws IOException;
 }

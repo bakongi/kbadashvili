@@ -10,11 +10,21 @@ public class StartUI {
     /**
      *
      */
-    private ConsoleInput ci = new ConsoleInput();
+    private Input input;
     /**
      *
      */
-    private Tracker tracker = new Tracker();
+    private Tracker tracker;
+
+    /**
+     *
+     * @param input любой Input.
+     * @param tracker tracker.
+     */
+    public StartUI(Input input, Tracker tracker) {
+        this.input = input;
+        this.tracker = tracker;
+    }
 
     /**
      *
@@ -27,25 +37,31 @@ public class StartUI {
 
         String ls = System.lineSeparator();
         String menu = (
-                "0. Add new Item" + ls +
-                        "1. Show all items" + ls +
-                        "2. Edit item" + ls +
-                        "3. Delete item" + ls +
-                        "4. Find item by Id" + ls +
-                        "5. Find items by name" + ls +
+                "0. Add new Item" + ls
+                        +
+                        "1. Show all items" + ls
+                        +
+                        "2. Edit item" + ls
+                        +
+                        "3. Delete item" + ls
+                        +
+                        "4. Find item by Id" + ls
+                        +
+                        "5. Find items by name" + ls
+                        +
                         "6. Exit Program" + ls
         );
 
         while (true) {
-            String number = ci.ask(menu);
+            String number = input.ask(menu);
 
             if (number.equals("0")) {
-                name = ci.ask("Please enter item name: ");
-                description = ci.ask("Please enter item description: ");
+                name = input.ask("Please enter item name: ");
+                description = input.ask("Please enter item description: ");
                 if (name != null && description != null) {
                     tracker.add(new Item(name, description));
                 } else {
-                   break;
+                    break;
                 }
             } else if (number.equals("1")) {
                 for (Item item : tracker.findAll()) {
@@ -54,13 +70,13 @@ public class StartUI {
                     }
                 }
             } else if (number.equals("2")) {
-                id = ci.ask("Please enter item ID: ");
+                id = input.ask("Please enter item ID: ");
                 for (Item item : tracker.findAll()) {
                     if (item != null) {
                         if (id.equals(item.getId())) {
                             System.out.println("Item (" + id + ") was found!");
-                            name = ci.ask("Please enter new item name: ");
-                            description = ci.ask("Please enter new item description: ");
+                            name = input.ask("Please enter new item name: ");
+                            description = input.ask("Please enter new item description: ");
                             Item newitem = new Item(name, description);
                             newitem.setId(item.getId());
                             tracker.update(newitem);
@@ -68,7 +84,7 @@ public class StartUI {
                     }
                 }
             } else if (number.equals("3")) {
-                id = ci.ask("Please enter item ID: ");
+                id = input.ask("Please enter item ID: ");
                 for (Item item : tracker.findAll()) {
                     if (item != null) {
                         if (id.equals(item.getId())) {
@@ -77,7 +93,7 @@ public class StartUI {
                     }
                 }
             } else if (number.equals("4")) {
-                id = ci.ask("Please enter item ID: ");
+                id = input.ask("Please enter item ID: ");
                 for (Item item : tracker.findAll()) {
                     if (item != null) {
                         if (id.equals(item.getId())) {
@@ -86,7 +102,7 @@ public class StartUI {
                     }
                 }
             } else if (number.equals("5")) {
-                id = ci.ask("Please enter item name: ");
+                id = input.ask("Please enter item name: ");
                 for (Item item : tracker.findAll()) {
                     if (item != null) {
                         if (id.equals(item.getName())) {
@@ -95,7 +111,7 @@ public class StartUI {
                     }
                 }
             } else if (number.equals("6")) {
-                System.out.print("Bye bye");
+                System.out.println("Bye bye");
                 break;
             }
         }
@@ -107,7 +123,8 @@ public class StartUI {
      * @throws IOException Exception
      */
     public static void main(String[] args) throws IOException {
-        new StartUI().init();
+        Tracker tracker = new Tracker();
+        Input input = new StubInput(new String[]{"0", "test name", "desc", "6"});
+        new StartUI(input, tracker).init();
     }
-
 }
