@@ -12,7 +12,7 @@ public class Square implements Shape {
     @Override
     public String pic() {
         StringBuilder sb = new StringBuilder();
-        for(int i = 0; i < 6; i++){
+        for (int i = 0; i < 6; i++) {
             sb.append("* * * * * *");
             sb.append(System.lineSeparator());
         }

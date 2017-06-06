@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by KBadashvili on 005 05.06.17.
@@ -39,7 +39,7 @@ public class SquareTest {
         Paint paint = new Paint(square);
 
         StringBuilder sb = new StringBuilder();
-        for(int i = 0; i < 6; i++){
+        for (int i = 0; i < 6; i++) {
             sb.append("* * * * * *");
             sb.append(System.lineSeparator());
         }

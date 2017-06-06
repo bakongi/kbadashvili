@@ -12,8 +12,9 @@ public class Triangle implements Shape {
     @Override
     public String pic() {
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 5; i++) {
             sb.append("    *********".substring(i, 5 + 2 * i)).append(System.lineSeparator());
+        }
         return sb.toString();
     }
 }

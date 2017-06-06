@@ -39,8 +39,9 @@ public class TriangleTest {
         Paint paint = new Paint(triangle);
 
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 5; i++) {
             sb.append("    *********".substring(i, 5 + 2 * i)).append(System.lineSeparator());
+        }
         sb.append(System.lineSeparator()); //тмитация переноса строки в println метода draw()  классе Paint
 
         setUpStreams();

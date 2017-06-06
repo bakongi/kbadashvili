@@ -14,7 +14,7 @@ public class Paint {
      *
      * @param shape shape.
      */
-    public Paint(Shape shape){
+    public Paint(Shape shape) {
         this.shape = shape;
     }
 
@@ -22,7 +22,7 @@ public class Paint {
      *
      * @param shape shape.
      */
-    public void draw(Shape shape){
+    public void draw(Shape shape) {
         System.out.println(shape.pic());
     }
 }
