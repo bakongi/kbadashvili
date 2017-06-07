@@ -1,5 +1,7 @@
 package ru.kbadashvili.part5.strategy;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
@@ -19,6 +21,7 @@ public class SquareTest {
     /**
      *
      */
+    @Before
     public void setUpStreams() {
         System.setOut(new PrintStream(outContent));
     }
@@ -26,6 +29,7 @@ public class SquareTest {
     /**
      *
      */
+    @After
     public void cleanUpStreams() {
         System.setOut(null);
     }
@@ -45,9 +49,7 @@ public class SquareTest {
         }
         sb.append(System.lineSeparator()); //тмитация переноса строки в println метода draw()  классе Paint
 
-        setUpStreams();
         paint.draw(square);
         assertEquals(sb.toString(), outContent.toString());
-        cleanUpStreams();
     }
 }
